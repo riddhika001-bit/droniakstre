@@ -12,27 +12,27 @@
 <h1 align="center">droniakstre — Autonomous API Threat Discovery &amp; Exploitation Prevention Agent</h1>
 
 <p align="center">
-  <strong>droniakstre</strong> is a self-hosted, AI-assisted API security testing application based on the open-source Xalgorix project. It supports authorized security testing, scan findings, and reports, with a dashboard branded for droniakstre. Built with Go and TypeScript.
+  <strong>droniakstre</strong> is a self-hosted, AI-assisted API security testing application based on the upstream open-source project. It supports authorized security testing, scan findings, and reports, with a dashboard branded for droniakstre. Built with Go and TypeScript.
 </p>
 
 <p align="center">
   <a href="#-droniakstre-docker-quick-start">🚀 Droniakstre Quick Start</a> ·
   <a href="#-quick-start">📖 Upstream Install Options</a> ·
-  <a href="#-why-xalgorix">💡 Why Xalgorix</a> ·
+  <a href="#-why-droniakstre">💡 Why droniakstre</a> ·
   <a href="#-features">✨ Features</a> ·
   <a href="#-use-cases">🎯 Use Cases</a> ·
   <a href="#self-host-or-cloud">☁️ Self-host or Cloud</a> ·
   <a href="https://github.com/riddhika001-bit/droniakstre">💻 droniakstre Repository</a>
 </p>
 
-> **droniakstre is a customized fork of [Xalgorix](https://github.com/xalgorix/xalgorix).** Product names, executable names, environment variables, and some upstream installation instructions below retain their original Xalgorix names for compatibility.
+> **droniakstre is a customized fork of the [upstream project](https://github.com/xalgorix/xalgorix).** Executable names, environment variables, and some installation instructions below retain their original identifiers for compatibility.
 
-| 🖥️ **Self-host** — this repo | ☁️ **[Xalgorix Cloud](https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=two_ways_title)** — nothing to install |
+| 🖥️ **Self-host** — this repo | ☁️ **Upstream hosted service** — nothing to install |
 | --- | --- |
 | Free and Apache-2.0. Runs on your machine with your own LLM key, or fully local with Ollama. Findings and reports stay on your infrastructure. | The same exploit-verified engine in your browser. Model, out-of-band callbacks and scheduling are managed for you. Packs from $10; credits never expire. |
 | [**Install in two commands ↓**](#-quick-start) | [**Compare self-hosted vs Cloud →**](https://www.xalgorix.com/hosted-vs-self-hosted?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=two_ways_compare) |
 
-<p align="center">🤖 Only need PR reviews? The <a href="https://github.com/apps/xalgorix">free Xalgorix GitHub App</a> comments a security review on every pull request — no account, no API key.</p>
+<p align="center">🤖 Only need PR reviews? The upstream <a href="https://github.com/apps/xalgorix">GitHub App</a> comments a security review on every pull request — no account, no API key.</p>
 
 ---
 
@@ -42,11 +42,11 @@
 
 | Overview dashboard                                      | Scan detail                                      | Findings                                      |
 | ------------------------------------------------------- | ------------------------------------------------ | --------------------------------------------- |
-| ![Xalgorix overview dashboard](assets/screenshot-1.png) | ![Xalgorix scan detail](assets/screenshot-2.png) | ![Xalgorix findings](assets/screenshot-3.png) |
+| ![droniakstre overview dashboard](assets/screenshot-1.png) | ![droniakstre scan detail](assets/screenshot-2.png) | ![droniakstre findings](assets/screenshot-3.png) |
 
-**☁️ Xalgorix Cloud dashboard** — the managed version at [www.xalgorix.com](https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=screenshot_caption)
+**☁️ Upstream hosted dashboard** — the managed service at [upstream website](https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=screenshot_caption)
 
-<a href="https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=screenshot"><img src="assets/SaaS-dashboard.png?v=4.5.154" alt="Xalgorix Cloud dashboard showing security score, vulnerability trends, remediation metrics, and open issues by category" width="860" /></a>
+<a href="https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=screenshot"><img src="assets/SaaS-dashboard.png?v=4.5.154" alt="Upstream hosted dashboard showing security score, vulnerability trends, remediation metrics, and open issues by category" width="860" /></a>
 
 ---
 
@@ -54,15 +54,15 @@
 
 ## 🤝 Sponsors
 
-Thanks to **[Swiftproxy](https://www.swiftproxy.net/?ref=xalgorix)** for sponsoring Xalgorix.
+Thanks to **[Swiftproxy](https://www.swiftproxy.net/?ref=xalgorix)** for sponsoring the upstream project.
 
 <a href="https://www.swiftproxy.net/?ref=xalgorix">
-  <img src="assets/swiftproxy_xalgorix.webp" alt="Swiftproxy sponsors Xalgorix — residential proxies for authorized testing across locations" width="860" />
+  <img src="assets/swiftproxy_xalgorix.webp" alt="Swiftproxy sponsorship — residential proxies for authorized testing across locations" width="860" />
 </a>
 
-Your app can behave differently depending on where a request comes from. For Xalgorix users checking their own applications across regions, Swiftproxy offers **location targeting** to review regional behavior and **sticky sessions** to help keep a consistent IP during a test session. It supports **HTTP(S) and SOCKS5**, the same proxy protocols Xalgorix supports.
+Your app can behave differently depending on where a request comes from. For droniakstre users checking their own applications across regions, Swiftproxy offers **location targeting** to review regional behavior and **sticky sessions** to help keep a consistent IP during a test session. It supports **HTTP(S) and SOCKS5**, the same proxy protocols supported by droniakstre.
 
-Residential proxies from **$0.70/GB**. **Free testing is available**, and Xalgorix users get **10% off** with code **`PROXY90`**.
+Residential proxies from **$0.70/GB**. **Free testing is available**, and upstream-project users get **10% off** with code **`PROXY90`**.
 
 [**Explore Swiftproxy and request a free test →**](https://www.swiftproxy.net/?ref=xalgorix)
 
@@ -86,7 +86,7 @@ Open [http://localhost:9137](http://localhost:9137). On first startup, Docker pr
 docker compose logs xalgorix
 ```
 
-The Compose setup stores scan data and settings in a named Docker volume. The build uses the upstream Xalgorix runtime image as its security-tool base and builds the droniakstre dashboard and application from this repository.
+The Compose setup stores scan data and settings in a named Docker volume. The build uses the upstream security-tool image as its base and builds the droniakstre dashboard and application from this repository.
 
 ### Upstream install options
 
@@ -112,7 +112,7 @@ Then run the interactive setup wizard:
 xalgorix --setup
 ```
 
-Choose your provider, confirm a model, and enter the API key when prompted. For best results, use a current frontier model with strong reasoning, long-context performance, and reliable tool calling—such as the latest capable GPT, Claude, or Gemini model available to you. Smaller or local models remain supported, but may require more supervision during long autonomous scans. Xalgorix stores the key privately in `~/.xalgorix.env` (mode `0600`) and can launch the dashboard for you. Local Ollama needs no API key.
+Choose your provider, confirm a model, and enter the API key when prompted. For best results, use a current frontier model with strong reasoning, long-context performance, and reliable tool calling—such as the latest capable GPT, Claude, or Gemini model available to you. Smaller or local models remain supported, but may require more supervision during long autonomous scans. droniakstre stores the key privately in `~/.xalgorix.env` (mode `0600`) and can launch the dashboard for you. Local Ollama needs no API key.
 
 If you choose not to launch immediately, start later with `xalgorix --web` and open `http://127.0.0.1:9137`. You can change providers or advanced options at any time under **Settings → LLM**, or rerun `xalgorix --setup`.
 
@@ -151,22 +151,22 @@ sudo install -m 755 build/xalgorix /usr/local/bin/xalgorix
 ```
 
 > [!TIP]
-> **Rather skip the setup?** [Xalgorix Cloud](https://www.xalgorix.com/signup?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=quickstart_tip) runs the same exploit-verified engine in your browser — no install, no LLM key, no token bill. Packs from $10, no subscription; credits never expire.
+> **Rather skip the setup?** [upstream hosted service](https://www.xalgorix.com/signup?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=quickstart_tip) runs the same exploit-verified engine in your browser — no install, no LLM key, no token bill. Packs from $10, no subscription; credits never expire.
 
 ### 🤖 Review pull requests automatically — free GitHub App
 
-Want a security review on every pull request with zero setup? Install the **[Xalgorix GitHub App](https://github.com/apps/xalgorix)**. It reads each PR's diff and comments a security review — injection, broken auth/IDOR, SSRF, secrets, unsafe patterns — right on the pull request. Updates in place on new commits, and you can comment **`@xalgorix review`** to re-run on demand. No workflow file, no API key, no account — and it's free.
+Want a security review on every pull request with zero setup? Install the **[upstream GitHub App](https://github.com/apps/xalgorix)**. It reads each PR's diff and comments a security review — injection, broken auth/IDOR, SSRF, secrets, unsafe patterns — right on the pull request. Updates in place on new commits, and you can comment **`@xalgorix review`** to re-run on demand. No workflow file, no API key, no account — and it's free.
 
 <div align="center">
 
-[**➕ Add Xalgorix to GitHub →**](https://github.com/apps/xalgorix/installations/new)
+[**➕ Install the upstream PR review app →**](https://github.com/apps/xalgorix/installations/new)
 
 </div>
 
 Need merge gating or a full exploit-verified pentest of the running app? Start a [Cloud scan from your CI](https://www.xalgorix.com/docs/api?utm_source=github&utm_medium=readme&utm_campaign=gh_app_to_cloud&utm_content=app_block_ci) with the REST API and gate on verified findings at the severity you choose.
 
 > [!IMPORTANT]
-> Use Xalgorix only on systems you own or have explicit permission to test.
+> Use droniakstre only on systems you own or have explicit permission to test.
 
 ## 📚 Contents
 
@@ -175,7 +175,7 @@ Need merge gating or a full exploit-verified pentest of the running app? Start a
 | 📸 [Screenshots](#-screenshots) | 🔩 [Configuration](#-configuration) | 🧾 [Environment Variables](#-environment-variables) |
 | 🚀 [Quick Start](#-quick-start) | 🆙 [Upgrading](#-upgrading-from-previous-versions) | 🔤 [Provider Prefixes](#-provider-prefixes) |
 | 🔎 [Overview](#-overview) | 🏃 [Running](#-running) | 💻 [CLI Reference](#-cli-reference) |
-| 💡 [Why Xalgorix](#-why-xalgorix) | 🧰 [Service Mode](#-service-mode) | 📡 [API Summary](#-api-summary) |
+| 💡 [Why droniakstre](#-why-droniakstre) | 🧰 [Service Mode](#-service-mode) | 📡 [API Summary](#-api-summary) |
 | 🎯 [Use Cases](#-use-cases) | 🔁 [Web UI Workflow](#-web-ui-workflow) | 💾 [Data Storage](#-data-storage) |
 | ✨ [Features](#-features) | 🔀 [Scan Modes](#-scan-modes) | 🧪 [Development](#-development) |
 | 📥 [Installation](#-installation) | 📂 [Scan Your Code](#-scan-your-code-no-target-needed) | 🚨 [Safety Notes](#-safety-notes) |
@@ -184,25 +184,25 @@ Need merge gating or a full exploit-verified pentest of the running app? Start a
 
 ## 🔎 Overview
 
-Xalgorix is a self-hosted AI penetration testing platform for authorized security testing, vulnerability assessment, and bug bounty workflows. It combines an LLM-driven autonomous agent, browser automation, terminal tooling, a comprehensive 22-phase testing methodology, live WebSocket telemetry, finding management with CVSS scoring, branded PDF report generation, and integrations for AgentMail, Discord, and Telegram.
+droniakstre is a self-hosted AI penetration testing platform for authorized security testing, vulnerability assessment, and bug bounty workflows. It combines an LLM-driven autonomous agent, browser automation, terminal tooling, a comprehensive 22-phase testing methodology, live WebSocket telemetry, finding management with CVSS scoring, branded PDF report generation, and integrations for AgentMail, Discord, and Telegram.
 
-Unlike cloud-only DAST scanners, Xalgorix runs entirely on your machine. You bring your own LLM provider (OpenAI, Anthropic, DeepSeek, Gemini, Groq, Ollama, MiniMax) and control the model, reasoning effort, rate limits, and proxy configuration. Nothing is sent to Xalgorix: scan context goes only to the LLM provider you configure (or stays local with Ollama), and blind-vulnerability callbacks use public Interactsh servers unless you set `XALGORIX_INTERACTSH_SERVER` to your own.
+Unlike cloud-only DAST scanners, droniakstre runs entirely on your machine. You bring your own LLM provider (OpenAI, Anthropic, DeepSeek, Gemini, Groq, Ollama, MiniMax) and control the model, reasoning effort, rate limits, and proxy configuration. Nothing is sent to droniakstre: scan context goes only to the LLM provider you configure (or stays local with Ollama), and blind-vulnerability callbacks use public Interactsh servers unless you set `XALGORIX_INTERACTSH_SERVER` to your own.
 
 The default experience is the Web UI. From one local dashboard you can start scans, monitor active runs, inspect findings, configure model/provider settings, manage environment variables, generate branded PDF reports, and delete or resume historical scans.
 
-## 💡 Why Xalgorix
+## 💡 Why droniakstre
 
-Most scanners **detect**. Xalgorix **proves**. An autonomous agent works through a 22-phase methodology, then an independent verifier re-tests every candidate finding before it is reported — so you get exploit-verified results with evidence, not a wall of "maybes" to triage.
+Most scanners **detect**. droniakstre **proves**. An autonomous agent works through a 22-phase methodology, then an independent verifier re-tests every candidate finding before it is reported — so you get exploit-verified results with evidence, not a wall of "maybes" to triage.
 
 - 🧠 **An AI agent, not a template engine** — reasons about auth flows, business logic, IDOR/BOLA, and chained exploits that signature scanners miss.
 - ✅ **Exploit-verified findings** — a separate verifier independently reproduces each finding; inconclusive ones are flagged for review, never dressed up as confirmed.
-- 🔒 **Self-hosted and private** — runs on your machine with your own LLM key; nothing is sent to Xalgorix, and with a local model plus your own OOB server, nothing leaves your network except traffic to the target.
+- 🔒 **Self-hosted and private** — runs on your machine with your own LLM key; nothing is sent to droniakstre, and with a local model plus your own OOB server, nothing leaves your network except traffic to the target.
 - 🧩 **Bring your own LLM** — OpenAI, Anthropic, DeepSeek, Gemini, Groq, Ollama, or MiniMax — or any OpenAI-compatible gateway like [LiteLLM](#-litellm--openai-compatible-gateways-github-copilot-claude-opus-codex-openrouter-azure-local-models) (GitHub Copilot, Codex, OpenRouter, Azure). You control model, reasoning effort, and cost.
 - 📄 **Audit-ready reports** — branded PDFs with CVSS scores, proof-of-concept, and remediation.
 
 ### 📊 How it compares
 
-|                                              | **Xalgorix**             | Template scanners (e.g. Nuclei) | Crawling scanners (e.g. OWASP ZAP) | Commercial DAST        |
+|                                              | **droniakstre**             | Template scanners (e.g. Nuclei) | Crawling scanners (e.g. OWASP ZAP) | Commercial DAST        |
 | -------------------------------------------- | ------------------------ | ------------------------------- | ---------------------------------- | ---------------------- |
 | Approach                                     | Autonomous AI agent      | Signatures / templates          | Spider + active rules              | Signatures + heuristics |
 | Business logic / IDOR / auth-bypass coverage | ✅                       | Limited                         | Limited                            | Partial                |
@@ -213,15 +213,15 @@ Most scanners **detect**. Xalgorix **proves**. An autonomous agent works through
 | Branded PDF reports                          | ✅                       | ❌                              | Basic                              | ✅                     |
 | Cost                                         | Open source + your LLM   | Free                            | Free                               | $$$                    |
 
-> Directional comparison — Nuclei and ZAP are excellent at what they do. Xalgorix adds the reasoning-heavy discovery and exploit-verification layer on top.
+> Directional comparison — Nuclei and ZAP are excellent at what they do. droniakstre adds the reasoning-heavy discovery and exploit-verification layer on top.
 
 <a name="self-host-or-cloud"></a>
 
-### ☁️ Self-hosted or Xalgorix Cloud?
+### ☁️ Self-hosted or upstream hosted service?
 
-Xalgorix is free and open source — self-host it forever, no strings attached. [Xalgorix Cloud](https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=compare_intro) runs the **same** exploit-verified engine for people who would rather not manage LLM keys and token bills, a ~6–8 GB privileged toolbox container, or their own callback infrastructure. Both are first-class — pick what fits.
+droniakstre is free and open source — self-host it forever, no strings attached. [upstream hosted service](https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=compare_intro) runs the **same** exploit-verified engine for people who would rather not manage LLM keys and token bills, a ~6–8 GB privileged toolbox container, or their own callback infrastructure. Both are first-class — pick what fits.
 
-|                                    | **Self-hosted** (this repo)                                  | **[Xalgorix Cloud](https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=compare_table_header)** |
+|                                    | **Self-hosted** (this repo)                                  | **[upstream hosted service](https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=compare_table_header)** |
 | ---------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------ |
 | Price to start                     | Free engine, Apache-2.0                                      | Packs from $10 (no subscription) or plans from $49/mo — [pricing](https://www.xalgorix.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=compare_table_price) |
 | LLM                                | Bring your own key — or run fully local with Ollama          | Included — no key, no token bill                       |
@@ -241,14 +241,14 @@ Xalgorix is free and open source — self-host it forever, no strings attached. 
 
 </div>
 
-If Xalgorix saves you a triage cycle, please **[⭐ star the repo](https://github.com/xalgorix/xalgorix)** — it genuinely helps others find it.
+If droniakstre saves you a triage cycle, please **[⭐ star the repo](https://github.com/xalgorix/xalgorix)** — it genuinely helps others find it.
 
 ## 🎯 Use Cases
 
-| Use Case | How Xalgorix helps |
+| Use Case | How droniakstre helps |
 | -------- | ------------------ |
 | **Penetration testing** | Run a full 22-phase methodology against authorized targets. The AI agent handles reconnaissance, vulnerability discovery, injection testing, SSRF, IDOR, auth bypass, race conditions, and more — then verifies findings before reporting. |
-| **Bug bounty hunting** | Point Xalgorix at an in-scope target and let the agent enumerate the attack surface, test for common vulnerability classes, and surface verified findings with CVSS scores and proof-of-concept evidence. |
+| **Bug bounty hunting** | Point droniakstre at an in-scope target and let the agent enumerate the attack surface, test for common vulnerability classes, and surface verified findings with CVSS scores and proof-of-concept evidence. |
 | **Red team operations** | Use wildcard and multi-target scan modes to map an organization's external attack surface. Browser-assisted DAST handles auth flows, forms, and runtime behavior that static scanners miss. |
 | **Security research** | The novel-vulnerability-discovery phase pushes the agent beyond known template matching. Bring your own LLM (OpenAI, Anthropic, DeepSeek, Gemini, Ollama, MiniMax) to control reasoning depth and cost. |
 | **Continuous security testing** | Run as a system service with `xalgorix --start`. Scan on a schedule, stream findings to Discord or Telegram, and generate branded PDF reports for stakeholders. |
@@ -364,7 +364,7 @@ sudo install -m 755 build/xalgorix /usr/local/bin/xalgorix
 
 ## 🔩 Configuration
 
-Xalgorix loads configuration in this order. Later sources override earlier ones.
+droniakstre loads configuration in this order. Later sources override earlier ones.
 
 | Order | Source                                                         |
 | ----- | -------------------------------------------------------------- |
@@ -381,7 +381,7 @@ nano ~/.xalgorix.env
 
 ### 🧩 Minimal Config
 
-For the strongest autonomous scanning results, select a current frontier model. The model ID below is a concrete example; newer compatible model IDs can be entered without waiting for a Xalgorix release.
+For the strongest autonomous scanning results, select a current frontier model. The model ID below is a concrete example; newer compatible model IDs can be entered without waiting for a droniakstre release.
 
 ```bash
 XALGORIX_LLM=openai/gpt-5.6
@@ -408,9 +408,9 @@ XALGORIX_API_KEY=your_provider_api_key
 #### 🌉 LiteLLM / OpenAI-compatible gateways (GitHub Copilot, Claude Opus, Codex, OpenRouter, Azure, local models)
 
 Because `XALGORIX_API_BASE` accepts any OpenAI-compatible `/v1/chat/completions` endpoint,
-Xalgorix works with a [LiteLLM](https://docs.litellm.ai/) proxy out of the box — no
-Xalgorix-side changes needed. LiteLLM handles the upstream provider auth (Copilot device
-login, Azure keys, OpenRouter, Ollama, etc.); Xalgorix just talks OpenAI to the gateway.
+droniakstre works with a [LiteLLM](https://docs.litellm.ai/) proxy out of the box — no
+droniakstre-side changes needed. LiteLLM handles the upstream provider auth (Copilot device
+login, Azure keys, OpenRouter, Ollama, etc.); droniakstre just talks OpenAI to the gateway.
 
 Run LiteLLM (example `config.yaml`):
 
@@ -423,7 +423,7 @@ general_settings:
   master_key: sk-local-litellm-key
 ```
 
-Point Xalgorix at it — use the `custom/` prefix so the model name is sent verbatim and the
+Point droniakstre at it — use the `custom/` prefix so the model name is sent verbatim and the
 OpenAI chat-completions protocol is used:
 
 ```bash
@@ -434,7 +434,7 @@ XALGORIX_API_KEY=sk-local-litellm-key          # LiteLLM master_key / virtual ke
 
 The same pattern covers GitHub Copilot Business/CLI, Claude Opus, Codex-style models,
 OpenRouter, Azure OpenAI, and local Ollama models — anything LiteLLM can route. Keep the
-`custom/` (or `openai/`) prefix and a non-Anthropic/Gemini `XALGORIX_API_BASE` so Xalgorix
+`custom/` (or `openai/`) prefix and a non-Anthropic/Gemini `XALGORIX_API_BASE` so droniakstre
 uses the standard OpenAI request shape that LiteLLM expects.
 
 ### 🔔 Optional Integrations
@@ -471,7 +471,7 @@ To retain the previous behavior, point `XALGORIX_DATA_DIR` at your current worki
 export XALGORIX_DATA_DIR=$(pwd)
 ```
 
-A `[MIGRATION]` warning is emitted at startup when legacy markers (`notes.json`, `_schedules/`, `vulnerabilities.json`, or `YYYY-MM-DD/scan-*` directories) are detected in `$CWD` and `XALGORIX_DATA_DIR` is unset. Xalgorix never reads, copies, or deletes those legacy files automatically; the warning is informational and only fires once per process.
+A `[MIGRATION]` warning is emitted at startup when legacy markers (`notes.json`, `_schedules/`, `vulnerabilities.json`, or `YYYY-MM-DD/scan-*` directories) are detected in `$CWD` and `XALGORIX_DATA_DIR` is unset. droniakstre never reads, copies, or deletes those legacy files automatically; the warning is informational and only fires once per process.
 
 ### 🆕 New environment variable
 
@@ -580,8 +580,8 @@ If the process is listening but the page still does not load remotely, allow TCP
 
 #### 🏠 Scanning local/internal targets
 
-By default Xalgorix refuses to scan loopback, `localhost`, private-range, or
-its own interface addresses — they're the machine Xalgorix runs on, not a
+By default droniakstre refuses to scan loopback, `localhost`, private-range, or
+its own interface addresses — they're the machine droniakstre runs on, not a
 target. On a **self-hosted, single-tenant** box you can opt in to scan a
 locally-hosted demo/staging app:
 
@@ -620,7 +620,7 @@ The dashboard's own listener is **always** protected, even with this enabled.
 
 ## 📂 Scan Your Code (no target needed)
 
-Point Xalgorix at a codebase — a Git URL, a local path, or an uploaded zip — and
+Point droniakstre at a codebase — a Git URL, a local path, or an uploaded zip — and
 it scans the source directly. No deployed URL, no infrastructure to stand up.
 
 ```bash
@@ -649,7 +649,7 @@ xalgorix --source https://github.com/org/app.git --code-scan provision
 
 ## 🧭 Methodology
 
-Xalgorix organizes autonomous testing into 22 phases.
+droniakstre organizes autonomous testing into 22 phases.
 
 | Phase | Focus                                      |
 | ----: | ------------------------------------------ |
@@ -778,7 +778,7 @@ Some settings require a restart because they affect process startup or server bi
 
 ## 🔤 Provider Prefixes
 
-When `XALGORIX_API_BASE` is empty, Xalgorix infers provider defaults from the model prefix.
+When `XALGORIX_API_BASE` is empty, droniakstre infers provider defaults from the model prefix.
 
 | Prefix       | Default API base                               |
 | ------------ | ---------------------------------------------- |
@@ -873,7 +873,7 @@ In the Docker image and the Helm chart, this directory is the `/data` volume (`X
 
 ## 🚨 Safety Notes
 
-- Use Xalgorix only against authorized targets.
+- Use droniakstre only against authorized targets.
 - Do not run active testing against third-party systems without permission.
 - Review scan instructions before launching.
 - Configure rate limits and proxy settings to match engagement rules.
@@ -882,16 +882,16 @@ In the Docker image and the Helm chart, this directory is the `/data` volume (`X
 
 ## 📜 License
 
-Xalgorix is released under the Apache License 2.0. See [LICENSE](LICENSE).
+droniakstre is released under the Apache License 2.0. See [LICENSE](LICENSE).
 
 ## 🔗 Links
 
 | Resource      | Link                                                                             |
 | ------------- | -------------------------------------------------------------------------------- |
-| ☁️ Xalgorix Cloud | [www.xalgorix.com](https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=links_table) · [pricing](https://www.xalgorix.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=links_table_pricing) |
+| ☁️ upstream hosted service | [www.droniakstre.com](https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=links_table) · [pricing](https://www.xalgorix.com/pricing?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=links_table_pricing) |
 | 🤖 GitHub App     | [Free security review on every PR](https://github.com/apps/xalgorix)              |
-| 📖 Documentation | [docs.xalgorix.com](https://docs.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_docs&utm_content=links_table)   |
+| 📖 Documentation | [docs.droniakstre.com](https://docs.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_docs&utm_content=links_table)   |
 | 💬 Questions     | [GitHub Discussions](https://github.com/xalgorix/xalgorix/discussions)             |
-| 🐛 Issues        | [github.com/xalgorix/xalgorix/issues](https://github.com/xalgorix/xalgorix/issues) |
+| 🐛 Issues        | [github.com/droniakstre/droniakstre/issues](https://github.com/xalgorix/xalgorix/issues) |
 | 🔒 Security      | [SECURITY.md](SECURITY.md) · [Disclosure program](https://www.xalgorix.com/vdp)    |
 | ☕ Support       | [buymeacoffee.com/xalgord](https://buymeacoffee.com/xalgord)                     |

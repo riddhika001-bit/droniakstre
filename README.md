@@ -1,34 +1,35 @@
 <div align="center">
 
-<img src="assets/banner.png?v=4.6.133" alt="Xalgorix — AI Autonomous Penetration Testing Platform" width="860" />
+<img src="assets/banner.png?v=4.6.133" alt="droniakstre — Autonomous API Threat Discovery & Exploitation Prevention Agent" width="860" />
 
 <br />
 
 [![Go](https://img.shields.io/badge/Go-1.26+-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://go.dev)
 [![License](https://img.shields.io/badge/License-Apache_2.0-10b981?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Linux_%7C_macOS-111111?style=for-the-badge&logo=linux&logoColor=white)](#-installation)
-[![Xalgorix Cloud](https://img.shields.io/badge/Cloud-no_install-C51C39?style=for-the-badge)](https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=hero_badge)
-[![GitHub stars](https://img.shields.io/github/stars/xalgorix/xalgorix?style=for-the-badge&logo=github&color=yellow)](https://github.com/xalgorix/xalgorix/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/xalgorix/xalgorix?style=for-the-badge&logo=github&color=blue)](https://github.com/xalgorix/xalgorix/network/members)
-[![GitHub release](https://img.shields.io/github/v/release/xalgorix/xalgorix?style=for-the-badge&logo=github&color=green)](https://github.com/xalgorix/xalgorix/releases)
+[![GitHub stars](https://img.shields.io/github/stars/riddhika001-bit/droniakstre?style=for-the-badge&logo=github&color=yellow)](https://github.com/riddhika001-bit/droniakstre/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/riddhika001-bit/droniakstre?style=for-the-badge&logo=github&color=blue)](https://github.com/riddhika001-bit/droniakstre/network/members)
+[![GitHub release](https://img.shields.io/github/v/release/riddhika001-bit/droniakstre?style=for-the-badge&logo=github&color=green)](https://github.com/riddhika001-bit/droniakstre/releases)
 
 </div>
 
-<h1 align="center">Xalgorix — Open-source AI pentester that <em>proves</em> vulnerabilities</h1>
+<h1 align="center">droniakstre — Autonomous API Threat Discovery &amp; Exploitation Prevention Agent</h1>
 
 <p align="center">
-  <strong>Most scanners detect. Xalgorix proves.</strong> An autonomous LLM agent works a full pentest methodology, then an <strong>independent verifier re-exploits every finding</strong> before it's reported — so you get proof, not a pile of maybes to triage. Self-hosted, private, and bring-your-own-LLM. Built in Go + TypeScript.
+  <strong>droniakstre</strong> is a self-hosted, AI-assisted API security testing application based on the open-source Xalgorix project. It supports authorized security testing, scan findings, and reports, with a dashboard branded for droniakstre. Built with Go and TypeScript.
 </p>
 
 <p align="center">
-  <a href="#-quick-start">🚀 Quick Start</a> ·
+  <a href="#-droniakstre-docker-quick-start">🚀 Droniakstre Quick Start</a> ·
+  <a href="#-quick-start">📖 Upstream Install Options</a> ·
   <a href="#-why-xalgorix">💡 Why Xalgorix</a> ·
   <a href="#-features">✨ Features</a> ·
   <a href="#-use-cases">🎯 Use Cases</a> ·
   <a href="#self-host-or-cloud">☁️ Self-host or Cloud</a> ·
-  <a href="https://docs.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_docs&utm_content=hero_nav">📖 Docs</a> ·
-  <a href="https://github.com/xalgorix/xalgorix/discussions">💬 Discussions</a>
+  <a href="https://github.com/riddhika001-bit/droniakstre">💻 droniakstre Repository</a>
 </p>
+
+> **droniakstre is a customized fork of [Xalgorix](https://github.com/xalgorix/xalgorix).** Product names, executable names, environment variables, and some upstream installation instructions below retain their original Xalgorix names for compatibility.
 
 | 🖥️ **Self-host** — this repo | ☁️ **[Xalgorix Cloud](https://www.xalgorix.com/?utm_source=github&utm_medium=readme&utm_campaign=oss_to_cloud&utm_content=two_ways_title)** — nothing to install |
 | --- | --- |
@@ -72,6 +73,26 @@ Residential proxies from **$0.70/GB**. **Free testing is available**, and Xalgor
 ---
 
 ## 🚀 Quick Start
+
+### 🐉 droniakstre Docker Quick Start
+
+Clone this repository and build/run the locally branded application:
+
+```bash
+git clone https://github.com/riddhika001-bit/droniakstre.git
+cd droniakstre
+docker compose up -d --build
+```
+
+Open [http://localhost:9137](http://localhost:9137). On first startup, Docker prints the generated dashboard username and password:
+
+```bash
+docker compose logs xalgorix
+```
+
+The Compose setup stores scan data and settings in a named Docker volume. The build uses the upstream Xalgorix runtime image as its security-tool base and builds the droniakstre dashboard and application from this repository.
+
+### Upstream install options
 
 **Install (one line):**
 

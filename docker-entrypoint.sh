@@ -34,6 +34,10 @@ esac
 has_auth=false
 if [ -n "${XALGORIX_USERNAME:-}" ] && { [ -n "${XALGORIX_PASSWORD:-}" ] || [ -n "${XALGORIX_PASSWORD_HASH:-}" ]; }; then
   has_auth=true
+elif grep -q '^XALGORIX_USERNAME=.' /data/.xalgorix.env \
+  && { grep -q '^XALGORIX_PASSWORD=.' /data/.xalgorix.env \
+    || grep -q '^XALGORIX_PASSWORD_HASH=.' /data/.xalgorix.env; }; then
+  has_auth=true
 fi
 
 if [ "$is_loopback" = false ] && [ "$has_auth" = false ]; then

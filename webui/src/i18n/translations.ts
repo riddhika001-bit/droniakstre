@@ -60,7 +60,7 @@ const en: Dict = {
   "sidebar.localScanner": "Local scanner",
   "sidebar.commandHint": "Ctrl+K for actions",
   "sidebar.github": "GitHub",
-  "sidebar.githubTitle": "View Xalgorix on GitHub",
+  "sidebar.githubTitle": "View droniakstre on GitHub",
   "sidebar.securityScanner": "security scanner",
   "sidebar.navigation": "Main navigation",
 
@@ -289,7 +289,7 @@ const zhCN: Dict = {
   "sidebar.localScanner": "本地扫描器",
   "sidebar.commandHint": "按 Ctrl+K 打开操作面板",
   "sidebar.github": "GitHub",
-  "sidebar.githubTitle": "在 GitHub 上查看 Xalgorix",
+  "sidebar.githubTitle": "在 GitHub 上查看 droniakstre",
   "sidebar.securityScanner": "安全扫描器",
   "sidebar.navigation": "主导航",
 

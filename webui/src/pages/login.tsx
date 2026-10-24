@@ -22,7 +22,7 @@ function describeLoginError(err: unknown): string {
         : ""
     switch (err.status) {
       case 0:
-        return "Cannot reach the server. Check your network or that the Xalgorix service is running."
+        return "Cannot reach the server. Check your network or that the droniakstre service is running."
       case 400:
         return serverMsg || "Invalid request. Please try again."
       case 401:
@@ -33,7 +33,7 @@ function describeLoginError(err: unknown): string {
         // The login endpoint is missing on the server. This is almost
         // always a stale Go binary — the SPA was rebuilt with the
         // /api/auth/login client but the embedded server wasn't.
-        return "Login endpoint not found on this server. The backend appears to be out of date — rebuild and redeploy the Xalgorix server."
+        return "Login endpoint not found on this server. The backend appears to be out of date — rebuild and redeploy the droniakstre server."
       case 405:
         return "This server doesn't accept the login request shape. Try refreshing the page."
       case 429: {
@@ -84,13 +84,13 @@ export default function LoginPage() {
     <div className="grid min-h-screen w-full bg-background lg:grid-cols-2">
       <div className="hidden flex-col justify-between border-r border-border bg-muted/30 p-12 lg:flex">
         <div className="flex items-center gap-3">
-          <img src="/logo.png" alt="Xalgorix" className="h-8 w-8 rounded-md" />
-          <span className="font-mono text-sm font-semibold tracking-tight">XALGORIX</span>
+          <img src="/logo.png" alt="droniakstre" className="h-8 w-8 rounded-md" />
+          <span className="font-mono text-sm font-semibold tracking-tight">droniakstre</span>
         </div>
         <div className="space-y-6">
           <div className="space-y-2">
             <h1 className="font-sans text-4xl font-semibold tracking-tight text-foreground text-balance">
-              The autonomous offensive AI platform.
+              Autonomous API Threat Discovery &amp; Exploitation Prevention Agent.
             </h1>
             <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
               Continuous reconnaissance, multi-phase exploitation, and AI-driven triage — orchestrated from a single
@@ -104,14 +104,14 @@ export default function LoginPage() {
             <Stat label="Coverage" value="98.4%" />
           </dl>
         </div>
-        <p className="text-xs text-muted-foreground">© Xalgorix · Internal use only</p>
+        <p className="text-xs text-muted-foreground">© droniakstre · Internal use only</p>
       </div>
 
       <div className="flex items-center justify-center p-6 sm:p-12">
         <div className="w-full max-w-sm">
           <div className="mb-8 flex items-center gap-3 lg:hidden">
-            <img src="/logo.png" alt="Xalgorix" className="h-8 w-8 rounded-md" />
-            <span className="font-mono text-sm font-semibold tracking-tight">XALGORIX</span>
+            <img src="/logo.png" alt="droniakstre" className="h-8 w-8 rounded-md" />
+            <span className="font-mono text-sm font-semibold tracking-tight">droniakstre</span>
           </div>
           <Card>
             <CardHeader>

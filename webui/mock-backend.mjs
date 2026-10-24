@@ -453,7 +453,7 @@ const server = http.createServer(async (req, res) => {
   if (reportMatch && method === "GET") {
     const id = reportMatch[1];
     const html = `<!doctype html><html><body style="font-family:sans-serif">
-<h1>Xalgorix scan report</h1>
+<h1>droniakstre scan report</h1>
 <p>Report for scan <code>${id}</code> (mock build).</p>
 </body></html>`;
     return send(res, html, 200, { "content-type": "text/html; charset=utf-8" });

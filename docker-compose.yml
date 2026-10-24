@@ -9,9 +9,11 @@
 # volume). Set the env vars below only if you'd rather bake them in.
 services:
   xalgorix:
-    image: xalgord/xalgorix:latest
-    # Or build locally instead of pulling:  build: .
-    #
+    image: droniakstre:local
+    build:
+      context: .
+      dockerfile: Dockerfile.branding
+      target: runtime
     # Full host-like permissions so the engine's toolset behaves as it does when
     # run natively as root. Docker's DEFAULT sandbox drops capabilities
     # (e.g. NET_ADMIN) and applies a seccomp/AppArmor filter, which breaks

@@ -1,8 +1,4 @@
-<div align="center">
 
-<img src="assets/banner.png?v=4.6.133" alt="droniakstre — Autonomous API Threat Discovery & Exploitation Prevention Agent" width="860" />
-
-<br />
 
 [![Go](https://img.shields.io/badge/Go-1.26+-00ADD8?style=for-the-badge&logo=go&logoColor=white)](https://go.dev)
 [![License](https://img.shields.io/badge/License-Apache_2.0-10b981?style=for-the-badge)](LICENSE)
